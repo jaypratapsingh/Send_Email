@@ -1,6 +1,6 @@
 *************Cordova : Send Email From App*****************
 
-By using this plugin you can send email get the returned value for performing task one by one.
+By using this plugin you can send email get the returned value for performing other task one by one.
 
 
 Install this plugin using:
@@ -15,7 +15,7 @@ cordova plugin remove com.jp.plugin.send_email
 
 
 
-Put the below code in your javascript code to get the ip address: 
+Put the below code in your javascript code to open email app: 
 
 send_email.open_email_app(
 	function(success)
