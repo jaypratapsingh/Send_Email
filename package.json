@@ -1,0 +1,16 @@
+{
+    "version": "1.0.0",
+    "name": "com.jp.plugin.send_email",
+    "cordova_name": "Send_Email",
+    "description": "Send Email and get value for performing other task",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "email",
+        "sendemail"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}

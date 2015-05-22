@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jp.plugin.send_email"
+    version="1.0.0">
+    <name>Send_Email</name>
+    <description>Send Email and get value for performing other task</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,email,sendemail</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/send_email.js" name="Send_Email">
+        <clobbers target="send_email" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Send_Email" >
+                <param name="android-package" value="com.jp.plugin.send_email.Send_Email"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/jp/plugin/send_email/Send_Email.java" target-dir="src/com/jp/plugin/send_email" />
+    </platform>
+</plugin>
