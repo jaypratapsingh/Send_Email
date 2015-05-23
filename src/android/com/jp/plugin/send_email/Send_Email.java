@@ -29,6 +29,14 @@ public class Send_Email extends CordovaPlugin {
                 String file_path = json_object.getString("file_path");
                 String cc = json_object.getString("cc");
 
+		try {
+                    to = to.replace("]", "");
+                    to = to.replace("[", "");
+                }
+                catch(Exception e) {
+                    e.printStackTrace();
+                }
+
 				final Intent email = new Intent(Intent.ACTION_SEND);
                 email.putExtra(Intent.EXTRA_EMAIL, new String[]{to});
                 email.putExtra(Intent.EXTRA_SUBJECT, subject);
